@@ -26,9 +26,9 @@ $( window ).on( "load", function() {
 
 	// Trigger function with "onkeyup"
 	document.onkeyup = function(eventkey){
-	if (eventkey.which < 65 || eventkey.which > 90) {
-        return;
-    }
+	// if (eventkey.which < 65 || eventkey.which > 90) {
+ //        return;
+ //    }
 	// Convert keycode to characters
 	  var guessedLetter = String.fromCharCode(eventkey.keyCode).toLowerCase(); // Holds the value in which the user presses on their keyboard
 	  console.log(guessedLetter);
