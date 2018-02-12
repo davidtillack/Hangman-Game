@@ -1,0 +1,67 @@
+.panel-default{
+  opacity:0.75;
+  font-weight:bold;
+  float:left;
+  width:31%;
+  margin-left:10px;
+}
+
+.jumbotron{
+  text-align: center;
+  opacity:0.75;
+  width:62%;
+  float:left;
+  padding-top:20px;
+  padding-bottom:42px;
+}
+
+p {
+  color: #000;
+  text-align: center;
+}
+h2 {
+  color: black;
+  font-size:20rem;
+}
+
+h3.panel-title{
+  font-weight:bold;
+  font-size:20rem;
+}
+
+button {
+  text-align: center;
+}
+
+html { font-size: 1px; 
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.6)), url("https://media.giphy.com/media/l4KhQo2MESJkc6QbS/giphy.gif");
+  background-position: 50% 15%;
+  background-size: cover;
+}
+
+/* Create animation on "Hangman" */
+
+@-webkit-keyframes typing { from { width:0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+h1 { 
+    font: bold 200% Consolas, Monaco, monospace;
+    border-right: .1em solid black;
+    width: 9ch;
+    margin: 0 auto;
+    white-space: nowrap;
+/*    letter-spacing:.1em;*/
+    overflow: hidden;
+    -webkit-animation: typing 5s steps(21,end),
+               blink-caret .45s step-end infinite;
+}

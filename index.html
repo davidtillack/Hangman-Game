@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<link rel="stylesheet" type="text/css" href="./assets/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>		
+
+	<script src="./assets/javascript/game.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+</head>
+
+<body>  
+
+<div class="container">
+
+    <div class="jumbotron">
+		<h1>Hangman</h1>
+		<h2>This game is space themed!</h2>
+		<h3>
+		------  Instructions  ------
+		<br>
+		<br>
+		1) To start the game, please press enter.
+		<br>
+		<br>
+		2) To play the game, please type any letter on your keyboard.
+		<br>
+		<br>
+		3) Upon winning or losing, please press enter again to reset.
+		</h3>
+    </div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+		  <h3 class="panel-title">Word to Guess: </h3>
+		</div>
+		<div class="panel-body">
+		<h2 id="convertLetter"> _ _ _ _ _ </h2>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+			Wrong Guesses: <span id="wrongGuesses"></span><br>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-body">
+			Guesses: <span id="numGuesses">10</span><br>
+			Wins: <span id="dispWins">0</span><br>
+			Losses: <span id="dispLosses">0</span><br>
+		</div>
+	</div>
+
+	</div>
+</div>
+
+
+</body>
+</html>
