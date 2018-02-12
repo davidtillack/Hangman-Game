@@ -1,8 +1,6 @@
 
 // Run the entire page once DOM and images are ready
 
-$( window ).on( "load", function() {
-
 // Set global variables and initialize game play
 	var wordBank = ['astroid','spaceship','fuel', 'planets', 'gravitation' , 'probe' , 'sputnik' , 'supernova','crater',
 					 'cosmos','moon','celestial','rocket','blackhole','ray','alien','satellite','orbit'];
@@ -26,9 +24,9 @@ $( window ).on( "load", function() {
 
 	// Trigger function with "onkeyup"
 	document.onkeyup = function(eventkey){
-	// if (eventkey.which < 65 || eventkey.which > 90) {
- //        return;
- //    }
+	if (eventkey.which < 65 || eventkey.which > 90) {
+        return;
+    }
 	// Convert keycode to characters
 	  var guessedLetter = String.fromCharCode(eventkey.keyCode).toLowerCase(); // Holds the value in which the user presses on their keyboard
 	  console.log(guessedLetter);
@@ -115,5 +113,4 @@ $( window ).on( "load", function() {
 	  document.getElementById("convertLetter").innerHTML = convertUnderToLetter.join(" ");
 	  document.getElementById("wrongGuesses").innerHTML = wrongLetters.join(" ");
 
-	}
-});  
+	} 
